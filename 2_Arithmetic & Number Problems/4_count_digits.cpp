@@ -1,13 +1,22 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main() {
-    int num;
-    cout << "Enter a number: ";
-    cin >> num;
-    
-    int lastDigit = l
-    
-    cout << "Last digit: " << lastDigit << endl;
+    int n;
+    cin >> n;
+
+    int count = 0;
+
+    if (n == 0) {
+        count = 1;
+    } else {
+        while (n != 0) {
+            n = n / 10;
+            count++;
+        }
+    }
+
+    cout << "Digit count = " << count << endl;
+
     return 0;
 }
